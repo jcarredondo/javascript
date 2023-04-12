@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<scr>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <script>
+        //para debugear, boton derecho Open with Live Server
+        //Ctls + s y se visualiza en tiempo real (Consola)
+        console.time('Timer1')
+        let items=[]
+        for (let i=0;i<100000;i++){
+            items.push(i)
+        }
+        console.time('Timer1')
+        let animales=[
+            {animal:'Caballo',name:'Henry',age:43},
+            {animal:'Perro',name:'Alan',age:13},
+            {animal:'Gato',name:'Pelusa'},
+        ]
+        console.table(animales)
+        console.log(animales);
+        //imprimir como un objeto
+        let name='Juan Carlos'
+        console.log({name}) //{name: 'Juan Carlos'}
+
+        //Para imprimir grupo de informacion
+        console.group('Detalle de usuario Juan carlos')
+        //.....
+
+        
+    </script>
+</body>
+</html>

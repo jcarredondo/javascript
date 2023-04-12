@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        while(true)
+        {
+            let resultado;
+            let num1=prompt('Ingrese el primer numero');
+            let num2=prompt('Ingrese el segundo numero');
+            let ope=prompt('Ingrese el operando de la operacion (+,-,*,/)')
+            if (num1==="S" || num2==="S" || ope==="S")
+            {
+                break;
+            }
+            num1=Number(num1);
+            num2=Number(num2);
+            if (Number.isNaN(num1) && Number.isNaN(num2)) 
+            {
+                resultado="Error en los datos";
+                break;
+            }
+            else
+            {
+                switch (ope)
+                {
+                    case "+":
+                        resultado=num1+num2;
+                        break;
+                    case "-":
+                        resultado=num1-num2;
+                        break;
+                    case "*":
+                        resultado=num1*num2;
+                        break;
+                    case "/":
+                        resultado=num1/num2;
+                        break;
+                    default:
+                        resultado="Operando no valido"
+                }
+            }
+            alert(resultado)
+        }
+    </script>
+</body>
+</html>
